@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SQC Stay — Furnished Studios & Apartments (Demo)</title>
+<meta name="description" content="Demo booking website concept for SQC Stay serviced apartments, Saudi Arabia.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236F8466'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ESQ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<div class="demo-strip" data-i18n="strip">Demo website concept — sample content only. Bookings are not real.</div>
+<span class="demo-badge" data-i18n="badge">Demo</span>
+
+<header class="nav"><div class="container nav-in">
+  <a class="brand" href="#top"><span class="brand-mark">SQ</span><span>SQC Stay<small data-i18n="brandSub">Serviced Apartments</small></span></a>
+  <nav class="nav-links">
+    <a href="#units" data-i18n="navUnits">Units</a><a href="#book" data-i18n="navBook">Book</a>
+    <a href="#amenities" data-i18n="navAmen">Amenities</a><a href="#location" data-i18n="navLoc">Location</a><a href="#contact" data-i18n="navContact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="btn btn-ghost btn-sm lang-btn" id="langBtn" type="button" aria-label="Switch language">العربية</button>
+    <a class="btn btn-primary btn-sm" href="#book" data-i18n="navCta">Book now</a>
+  </div>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <img src="img/photo01.jpg" alt="SQC Stay bedroom" fetchpriority="high">
+  <div class="container hero-c">
+    <span class="pill" data-i18n="heroPill">Saudi Arabia · City: to be confirmed</span>
+    <h1 data-i18n="heroTitle">Your furnished home, ready when you arrive</h1>
+    <p data-i18n="heroSub">Bright, fully furnished studios and apartments for short and long stays. Pick your dates and request a booking in under a minute.</p>
+    <div class="btns"><a class="btn btn-primary" href="#book" data-i18n="heroCta">Check dates</a><a class="btn btn-ghost" href="#units" data-i18n="heroCta2">View units</a></div>
+    <div class="facts">
+      <div class="fact"><b>75</b><span data-i18n="f1">furnished units</span></div>
+      <div class="fact"><b data-i18n="f2v">2</b><span data-i18n="f2">unit types</span></div>
+      <div class="fact"><b data-i18n="f3v">EN/AR</b><span data-i18n="f3">online booking</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="units"><div class="container">
+  <div class="sec-h"><div class="eyebrow" data-i18n="uEye">Our units</div><h2 data-i18n="uTitle">Studios & apartments</h2><p data-i18n="uSub">Real photos from the property. Rates below are sample values for this demo.</p></div>
+  <div class="units">
+    <article class="unit">
+      <div class="unit-gal"><img src="img/photo02.jpg" alt="Studio with kitchenette" loading="lazy"><img src="img/photo13.jpg" alt="Studio bed and lounge" loading="lazy"><img src="img/photo03.jpg" alt="Studio bedroom" loading="lazy"></div>
+      <div class="unit-b">
+        <h3 data-i18n="studio">Studio</h3>
+        <p style="margin:0;color:var(--muted)" data-i18n="studioD">Open-plan studio with a comfortable bed, lounge seating, kitchenette with microwave and fridge, and air-conditioning.</p>
+        <div class="tags"><span class="tag" data-i18n="tKitchenette">Kitchenette</span><span class="tag" data-i18n="tAC">Air-conditioning</span><span class="tag" data-i18n="tSofa">Lounge area</span><span class="tag" data-i18n="tG2">Up to 2 guests (sample)</span></div>
+        <div class="price"><b data-i18n="studioP">SAR 250</b><span data-i18n="perNight">/ night</span><span class="sample" data-i18n="sampleRate">Sample rate</span></div>
+        <a class="btn btn-primary" href="#book" data-unit="studio" data-i18n="bookThis">Book this unit</a>
+      </div>
+    </article>
+    <article class="unit">
+      <div class="unit-gal"><img src="img/photo07.jpg" alt="Apartment bedroom" loading="lazy"><img src="img/photo06.jpg" alt="Apartment living room" loading="lazy"><img src="img/photo04.jpg" alt="Apartment kitchen" loading="lazy"></div>
+      <div class="unit-b">
+        <h3 data-i18n="apartment">Apartment</h3>
+        <p style="margin:0;color:var(--muted)" data-i18n="aptD">Separate bedroom and living room with smart TV, a fitted kitchen with oven and hob, and a private bathroom.</p>
+        <div class="tags"><span class="tag" data-i18n="tKitchen">Full kitchen</span><span class="tag" data-i18n="tTV">Smart TV</span><span class="tag" data-i18n="tLiving">Living room</span><span class="tag" data-i18n="tG4">Up to 4 guests (sample)</span></div>
+        <div class="price"><b data-i18n="aptP">SAR 400</b><span data-i18n="perNight">/ night</span><span class="sample" data-i18n="sampleRate">Sample rate</span></div>
+        <a class="btn btn-primary" href="#book" data-unit="apartment" data-i18n="bookThis">Book this unit</a>
+      </div>
+    </article>
+  </div>
+  <h3 style="margin:40px 0 14px" data-i18n="galTitle">Photo gallery</h3>
+  <div class="gallery">
+    <img src="img/photo05.jpg" alt="Living area with kitchenette" loading="lazy"><img src="img/photo11.jpg" alt="Lounge with TV" loading="lazy">
+    <img src="img/photo12.jpg" alt="Bathroom" loading="lazy"><img src="img/photo08.jpg" alt="Living room" loading="lazy">
+    <img src="img/photo09.jpg" alt="Kitchenette and sofa" loading="lazy"><img src="img/photo01.jpg" alt="Bedroom" loading="lazy">
+    <img src="img/photo10.jpg" alt="Living area" loading="lazy"><img src="img/photo03.jpg" alt="Bedroom with wardrobe" loading="lazy">
+  </div>
+</div></section>
+
+<section id="book" style="background:var(--sand)"><div class="container">
+  <div class="sec-h"><div class="eyebrow" data-i18n="bEye">Booking</div><h2 data-i18n="bTitle">Choose your dates</h2><p data-i18n="bSub">Tap your check-in date, then your check-out date.</p></div>
+  <div class="book-wrap">
+    <div class="card">
+      <div class="cal-head"><button class="icon-btn flip" id="calPrev" type="button" aria-label="Previous month">‹</button><h4 data-i18n="calTitle">Availability calendar</h4><button class="icon-btn flip" id="calNext" type="button" aria-label="Next month">›</button></div>
+      <div class="cal-months" id="calMonths"></div>
+      <div class="cal-sum">
+        <div><span data-i18n="checkIn">Check-in</span><b id="sumIn">—</b></div>
+        <div><span data-i18n="checkOut">Check-out</span><b id="sumOut">—</b></div>
+        <div><span data-i18n="nightsL">Nights</span><b id="sumN">0</b></div>
+      </div>
+    </div>
+    <div class="card">
+      <form id="bookForm" novalidate>
+        <div class="field"><label for="fName" data-i18n="fName">Full name</label><input id="fName" autocomplete="name" data-i18n-ph="fNamePh" placeholder="e.g. Sample Name"><div class="err" data-i18n="eName">Please enter your name.</div></div>
+        <div class="field"><label for="fPhone" data-i18n="fPhone">Phone</label><input id="fPhone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="05X XXX XXXX"><div class="err" data-i18n="ePhone">Please enter a valid phone number.</div></div>
+        <div class="row two">
+          <div class="field"><label for="fIn" data-i18n="checkIn">Check-in</label><input id="fIn" type="date"><div class="err" data-i18n="eDates">Please choose valid dates.</div></div>
+          <div class="field"><label for="fOut" data-i18n="checkOut">Check-out</label><input id="fOut" type="date"></div>
+        </div>
+        <div class="row two">
+          <div class="field"><label for="fUnit" data-i18n="fUnit">Unit type</label><select id="fUnit"><option value="studio" data-i18n="studio">Studio</option><option value="apartment" data-i18n="apartment">Apartment</option></select></div>
+          <div class="field"><label for="fGuests" data-i18n="fGuests">Guests</label><select id="fGuests"><option>1</option><option selected>2</option><option>3</option><option>4</option></select><div class="err" data-i18n="eGuests">Studios fit up to 2 guests (sample rule).</div></div>
+        </div>
+        <div class="field"><label for="fNotes" data-i18n="fNotes">Notes (optional)</label><textarea id="fNotes" rows="2"></textarea></div>
+        <div class="note" id="estimate" data-i18n="estNote">Select dates to see a sample estimate.</div>
+        <button class="btn btn-primary" style="width:100%" type="submit" data-i18n="submit">Request booking (demo)</button>
+        <p style="font-size:12.5px;color:var(--muted);margin:10px 0 0" data-i18n="formDisc">This is a demo. Submitting does not reserve a unit or contact the property.</p>
+      </form>
+    </div>
+  </div>
+</div></section>
+
+<section id="amenities"><div class="container">
+  <div class="sec-h"><div class="eyebrow" data-i18n="aEye">Amenities</div><h2 data-i18n="aTitle">Everything for a comfortable stay</h2><p data-i18n="aSub">Based on what is visible in the property photos.</p></div>
+  <div class="amen">
+    <div class="am"><div class="ic">❄️</div><b data-i18n="am1">Air-conditioning</b><span data-i18n="am1d">Split AC units in rooms</span></div>
+    <div class="am"><div class="ic">🍳</div><b data-i18n="am2">Kitchen / kitchenette</b><span data-i18n="am2d">Microwave, kettle, fridge, oven in apartments</span></div>
+    <div class="am"><div class="ic">📺</div><b data-i18n="am3">Smart TV</b><span data-i18n="am3d">In living areas</span></div>
+    <div class="am"><div class="ic">🛏️</div><b data-i18n="am4">Fresh linen</b><span data-i18n="am4d">Hotel-style bedding</span></div>
+    <div class="am"><div class="ic">🛋️</div><b data-i18n="am5">Lounge seating</b><span data-i18n="am5d">Sofas and coffee tables</span></div>
+    <div class="am"><div class="ic">🚿</div><b data-i18n="am6">Private bathroom</b><span data-i18n="am6d">In every unit</span></div>
+    <div class="am"><div class="ic">🧳</div><b data-i18n="am7">Wardrobe storage</b><span data-i18n="am7d">Built-in wardrobes</span></div>
+    <div class="am"><div class="ic">📶</div><b data-i18n="am8">Wi-Fi</b><span data-i18n="am8d">To be confirmed (placeholder)</span></div>
+  </div>
+</div></section>
+
+<section id="location" style="background:var(--white)"><div class="container">
+  <div class="sec-h"><div class="eyebrow" data-i18n="lEye">Location</div><h2 data-i18n="lTitle">Where to find us</h2></div>
+  <div class="loc">
+    <div class="map-ph"><div><b data-i18n="mapPh">Map placeholder</b><br><span data-i18n="mapPh2">The exact address and map will be added once confirmed.</span></div></div>
+    <div class="card" style="box-shadow:none;border:1px solid var(--line)">
+      <ul class="contact-list">
+        <li><span class="ic">📍</span><div><b data-i18n="addrL">Address</b><br><span data-i18n="addrV">[Address placeholder]</span> <span class="ph" data-i18n="ph">Placeholder</span></div></li>
+        <li><span class="ic">🏙️</span><div><b data-i18n="cityL">City</b><br><span data-i18n="cityV">[City — to be confirmed], Saudi Arabia</span></div></li>
+        <li><span class="ic">🕒</span><div><b data-i18n="hoursL">Check-in / check-out</b><br><span data-i18n="hoursV">[Times to be confirmed]</span> <span class="ph" data-i18n="ph">Placeholder</span></div></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <div class="sec-h"><div class="eyebrow" data-i18n="cEye">Contact</div><h2 data-i18n="cTitle">Questions before you book?</h2><p data-i18n="cSub">Contact details below are placeholders for this demo, not the property's real details.</p></div>
+  <div class="card" style="max-width:640px">
+    <ul class="contact-list">
+      <li><span class="ic">💬</span><div><b data-i18n="waL">WhatsApp (demo placeholder)</b><br><a href="https://wa.me/966559510162" target="_blank" rel="noopener" dir="ltr">+966 55 951 0162</a> <span class="ph" data-i18n="phDemo">Demo number</span></div></li>
+      <li><span class="ic">✉️</span><div><b data-i18n="emL">Email</b><br><span data-i18n="emV">[Email placeholder]</span> <span class="ph" data-i18n="ph">Placeholder</span></div></li>
+    </ul>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="container">
+  <b>SQC Stay</b> · <span data-i18n="footer">Demo website concept prepared by Lumine. Photos supplied by the property; all prices, address and contact details are placeholders.</span>
+  <div style="margin-top:10px"><a href="admin.html" data-i18n="adminLink">Admin dashboard (demo)</a></div>
+</div></footer>
+
+<div class="modal" id="okModal" role="dialog" aria-modal="true" aria-labelledby="okT"><div class="modal-box">
+  <h3 id="okT" data-i18n="okTitle">Demo request received</h3>
+  <div class="demo-alert" data-i18n="okDemo">This is a DEMO. No booking has been made and nobody has been contacted. This is not a confirmation.</div>
+  <dl class="kv" id="okKv"></dl>
+  <p style="font-size:13px;color:var(--muted)" data-i18n="okAdmin">You can see this demo request in the admin dashboard.</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-ghost" href="admin.html" data-i18n="openAdmin">Open admin</a><button class="btn btn-primary" id="okClose" type="button" data-i18n="close">Close</button></div>
+</div></div>
+<div class="lightbox" id="lb"><button type="button" id="lbClose" aria-label="Close">×</button><img alt="" id="lbImg"></div>
+
+<script src="common.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>

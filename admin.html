@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SQC Stay Admin (Demo)</title><meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236F8466'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ESQ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1"><link rel="stylesheet" href="admin.css?v=1">
+</head>
+<body>
+<div class="demo-strip" data-i18n="strip">Demo admin dashboard — data is stored only in this browser (localStorage).</div>
+<span class="demo-badge" data-i18n="badge">Demo</span>
+
+<div class="login" id="login"><div class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center"><a class="brand" href="index.html"><span class="brand-mark">SQ</span><span>SQC Stay<small data-i18n="adminSub">Admin (demo)</small></span></a><button class="btn btn-ghost btn-sm lang-btn" type="button" data-lang>العربية</button></div>
+  <h2 style="margin:18px 0 4px" data-i18n="loginT">Sign in</h2>
+  <div class="creds"><b data-i18n="credsT">Demo login</b><br><span data-i18n="userL">Username</span>: <code dir="ltr">admin</code><br><span data-i18n="passL">Password</span>: <code dir="ltr">demo1234</code></div>
+  <form id="loginForm" novalidate>
+    <div class="field"><label for="lu" data-i18n="userL">Username</label><input id="lu" autocomplete="username" dir="ltr"></div>
+    <div class="field"><label for="lp" data-i18n="passL">Password</label><input id="lp" type="password" autocomplete="current-password" dir="ltr"><div class="err" data-i18n="loginErr">Wrong demo credentials. Use admin / demo1234.</div></div>
+    <button class="btn btn-primary" style="width:100%" type="submit" data-i18n="loginB">Sign in</button>
+  </form>
+  <p style="font-size:12.5px;color:var(--muted)" data-i18n="loginNote">Demo only — not a secure login.</p>
+</div></div>
+
+<div class="dash" id="dash">
+  <div class="topbar"><div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark">SQ</span><span>SQC Stay<small data-i18n="adminSub">Admin (demo)</small></span></a>
+    <div class="nav-actions"><button class="btn btn-ghost btn-sm lang-btn" type="button" data-lang>العربية</button><button class="btn btn-ghost btn-sm" id="logout" type="button" data-i18n="logout">Log out</button></div>
+  </div></div>
+  <div class="container wrap">
+    <div class="stats" id="stats"></div>
+    <div class="grid2">
+      <div class="panel">
+        <div class="ph-head"><h3 data-i18n="occT">Occupancy calendar</h3><div style="display:flex;gap:6px;align-items:center"><button class="icon-btn flip" id="oPrev" type="button" aria-label="Previous">‹</button><b id="oMonth" style="min-width:130px;text-align:center"></b><button class="icon-btn flip" id="oNext" type="button" aria-label="Next">›</button></div></div>
+        <div class="occ-g" id="occ"></div>
+        <div class="legend"><span><i style="background:#F6F1EB"></i>0</span><span><i style="background:#E2E8DD"></i>1–2</span><span><i style="background:#BFCDB7"></i>3–5</span><span><i style="background:#8FA584"></i>6–10</span><span><i style="background:#566A4F"></i>11+</span><span data-i18n="occLeg">booked units / 75 (pending + confirmed)</span></div>
+      </div>
+      <div class="panel">
+        <div class="ph-head"><h3 data-i18n="unitsT">Unit status board</h3><span class="sample" data-i18n="unitsSample">Sample unit numbers & split</span></div>
+        <div class="units-g" id="units"></div>
+        <div class="legend"><span><i style="background:#8FA584"></i><span data-i18n="available">Available</span></span><span><i style="background:#A99279"></i><span data-i18n="occupied">Occupied</span></span><span><i style="background:#7FA3B5"></i><span data-i18n="cleaning">Cleaning</span></span><span><i style="background:#C2553D"></i><span data-i18n="maintenance">Maintenance</span></span><span data-i18n="unitsHint">Tap a unit to change its status.</span></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="ph-head"><h3 data-i18n="bkT">Bookings</h3>
+        <div class="filters"><input id="q" type="search" data-i18n-ph="search" placeholder="Search name / phone / ref"><select id="fs"><option value="all" data-i18n="all">All statuses</option><option value="pending" data-i18n="pending">Pending</option><option value="confirmed" data-i18n="confirmed">Confirmed</option><option value="cancelled" data-i18n="cancelled">Cancelled</option></select><button class="btn btn-ghost btn-sm" id="clearDay" type="button" style="display:none"></button><button class="btn btn-ghost btn-sm" id="reset" type="button" data-i18n="reset">Reset demo data</button></div>
+      </div>
+      <div class="bk-list" id="list"></div>
+    </div>
+  </div>
+</div>
+<script src="common.js?v=1"></script>
+<script src="admin.js?v=1"></script>
+</body></html>
